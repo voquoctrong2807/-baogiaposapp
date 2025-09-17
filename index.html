@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Báo giá giải pháp hóa đơn & phần mềm quản lý - Full</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body class="bg-gray-50 font-sans leading-relaxed text-gray-800">
+  <header class="bg-indigo-600 text-white p-6 text-center">
+    <h1 class="text-2xl font-bold">Báo giá giải pháp Hóa đơn điện tử & Phần mềm quản lý</h1>
+    <p class="mt-2">Chọn gói/thiết bị - Tạo báo giá & xuất PDF nhanh</p>
+  </header>
+
+  <main class="max-w-7xl mx-auto p-6 space-y-10">
+    <!-- Combos (Cards) -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Combo trọn gói (Hóa đơn + Phần mềm)</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow p-5 border-t-4 border-yellow-400">
+          <h3 class="font-bold text-lg">Combo 1</h3>
+          <p class="text-sm text-gray-600">Hóa đơn điện tử + chữ ký số (1 năm)</p>
+          <ul class="mt-3 text-sm space-y-1">
+            <li>✔ 01 năm phần mềm hóa đơn PosApp</li>
+            <li>✔ Chữ ký số HSM 1 năm</li>
+          </ul>
+          <p class="mt-3 line-through text-gray-400">2.950.000đ</p>
+          <p class="text-2xl font-bold text-orange-600">1.350.000đ</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-5 border-t-4 border-green-500">
+          <h3 class="font-bold text-lg">Combo 2</h3>
+          <p class="text-sm text-gray-600">Hóa đơn + Phần mềm quản lý (cơ bản)</p>
+          <ul class="mt-3 text-sm space-y-1">
+            <li>✔ 01 năm phần mềm hóa đơn PosApp</li>
+            <li>✔ 01 năm phần mềm quản lý PosApp (cơ bản)</li>
+            <li>✔ Chữ ký số HSM 1 năm</li>
+          </ul>
+          <p class="mt-3 line-through text-gray-400">4.750.000đ</p>
+          <p class="text-2xl font-bold text-green-600">1.850.000đ</p>
+        </div>
+        <div class="bg-white rounded-xl shadow p-5 border-t-4 border-blue-500 relative">
+          <span class="absolute top-3 right-3 bg-red-500 text-white text-xs px-2 py-1 rounded">Best Seller</span>
+          <h3 class="font-bold text-lg">Combo 3</h3>
+          <p class="text-sm text-gray-600">Hóa đơn + Phần mềm (phổ biến)</p>
+          <ul class="mt-3 text-sm space-y-1">
+            <li>✔ 01 năm phần mềm hóa đơn PosApp</li>
+            <li>✔ 01 năm phần mềm quản lý PosApp (phổ biến)</li>
+            <li>✔ Chữ ký số HSM 1 năm</li>
+          </ul>
+          <p class="mt-3 line-through text-gray-400">5.600.000đ</p>
+          <p class="text-2xl font-bold text-blue-600">2.350.000đ</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combo Máy + Phần mềm (table) -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Combo Máy + Phần mềm</h2>
+      <div class="overflow-x-auto bg-white rounded-xl shadow p-4">
+        <table class="w-full table-auto text-sm">
+          <thead class="bg-yellow-50">
+            <tr>
+              <th class="p-3 text-left">Tên combo</th>
+              <th class="p-3 text-center">01 năm</th>
+              <th class="p-3 text-center">03 năm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t"><td class="p-3">Combo PAM3 (Gói phổ biến)</td><td class="p-3 text-center">6.990.000</td><td class="p-3 text-center">8.990.000</td></tr>
+            <tr class="border-t"><td class="p-3">Combo PAM3 (Gói nâng cao)</td><td class="p-3 text-center">7.690.000</td><td class="p-3 text-center">10.390.000</td></tr>
+            <tr class="border-t"><td class="p-3">Combo D3 (Gói phổ biến)</td><td class="p-3 text-center">7.990.000</td><td class="p-3 text-center">10.850.000</td></tr>
+            <tr class="border-t"><td class="p-3">Combo PAC2S (Gói phổ biến)</td><td class="p-3 text-center">6.490.000</td><td class="p-3 text-center">—</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Thiết bị phần cứng -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Thiết bị phần cứng</h2>
+      <div class="overflow-x-auto bg-white rounded-xl shadow p-4">
+        <table class="w-full table-auto text-sm">
+          <thead class="bg-indigo-50">
+            <tr>
+              <th class="p-3 text-left">Tên sản phẩm</th>
+              <th class="p-3 text-center">ĐVT</th>
+              <th class="p-3 text-center">Giá bán (VNĐ)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t"><td class="p-3">Máy POSAPP D3 (RAM 2GB)</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">5.900.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy POSAPP PAM3</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">5.290.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy POS PAC2S</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">4.690.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy in Bill Xprinter XP-Q807K</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">1.370.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy in tem Xprinter PA 365B</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">1.590.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy in tem PA (USB)</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">2.190.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy in tem PA (LAN + USB)</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">2.490.000</td></tr>
+            <tr class="border-t"><td class="p-3">Ngăn kéo đựng tiền (4 ngăn)</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">810.000</td></tr>
+            <tr class="border-t"><td class="p-3">Ngăn kéo đựng tiền (10 ngăn)</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">1.050.000</td></tr>
+            <tr class="border-t"><td class="p-3">Bộ rung 16 thẻ</td><td class="p-3 text-center">Bộ</td><td class="p-3 text-center">3.200.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy quét mã vạch đơn tia</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">970.000</td></tr>
+            <tr class="border-t"><td class="p-3">Máy quét mã vạch đa tia</td><td class="p-3 text-center">Cái</td><td class="p-3 text-center">1.480.000</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Phần mềm và bảng tính năng -->
+    <section>
+      <h2 class="text-2xl font-semibold mb-4">Phần mềm PosApp - Giá & Tính năng</h2>
+      <div class="bg-white rounded-xl shadow p-4 mb-6 overflow-x-auto">
+        <table class="w-full text-sm">
+          <thead class="bg-green-50">
+            <tr><th class="p-3 text-left">Gói</th><th class="p-3 text-center">01 năm</th><th class="p-3 text-center">02 năm</th><th class="p-3 text-center">03 năm</th></tr>
+          </thead>
+          <tbody>
+            <tr class="border-t"><td class="p-3 font-semibold">Cơ bản</td><td class="p-3 text-center">1.800.000</td><td class="p-3 text-center">3.600.000</td><td class="p-3 text-center">5.400.000</td></tr>
+            <tr class="border-t"><td class="p-3 font-semibold">Phổ biến</td><td class="p-3 text-center">2.640.000</td><td class="p-3 text-center">5.280.000</td><td class="p-3 text-center">7.920.000</td></tr>
+            <tr class="border-t"><td class="p-3 font-semibold">Nâng cao</td><td class="p-3 text-center">3.588.000</td><td class="p-3 text-center">7.176.000</td><td class="p-3 text-center">10.764.000</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="bg-white rounded-xl shadow p-4 overflow-x-auto">
+        <h3 class="font-semibold mb-3">So sánh tính năng</h3>
+        <table class="w-full text-sm">
+          <thead class="bg-blue-50"><tr><th class="p-3 text-left">Tính năng</th><th class="p-3 text-center">Cơ bản</th><th class="p-3 text-center">Phổ biến</th><th class="p-3 text-center">Nâng cao</th></tr></thead>
+          <tbody>
+            <tr class="border-t"><td class="p-3">Số đơn hàng</td><td class="p-3 text-center">Tối đa 6000/tháng</td><td class="p-3 text-center">Không giới hạn</td><td class="p-3 text-center">Không giới hạn</td></tr>
+            <tr class="border-t"><td class="p-3">Số thiết bị bán hàng</td><td class="p-3 text-center">3 thiết bị</td><td class="p-3 text-center">Không giới hạn</td><td class="p-3 text-center">Không giới hạn</td></tr>
+            <tr class="border-t"><td class="p-3">Quản lý kho</td><td class="p-3 text-center">Cơ bản</td><td class="p-3 text-center">Có</td><td class="p-3 text-center">Nhiều kho, chuyên sâu</td></tr>
+            <tr class="border-t"><td class="p-3">Bán hàng online</td><td class="p-3 text-center">Không</td><td class="p-3 text-center">Có Website bán hàng</td><td class="p-3 text-center">Có Website + QR order</td></tr>
+            <tr class="border-t"><td class="p-3">Quản lý khách hàng</td><td class="p-3 text-center">Không</td><td class="p-3 text-center">Khách xem menu, gọi món</td><td class="p-3 text-center">Tích điểm, thẻ thành viên</td></tr>
+            <tr class="border-t"><td class="p-3">Quản lý nâng cao</td><td class="p-3 text-center">Không</td><td class="p-3 text-center">Định lượng NVL, thu-chi</td><td class="p-3 text-center">Quản lý lịch hẹn, thẻ trả trước</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Tạo báo giá tùy chọn (Form) -->
+    <section class="bg-white rounded-xl shadow p-6">
+      <h2 class="text-2xl font-semibold mb-4">Tạo báo giá tùy chọn</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div>
+          <label class="block mb-2 font-medium">Tên khách hàng</label>
+          <input id="customerName" class="w-full border rounded p-2 mb-4" placeholder="Tên khách / Công ty" />
+
+          <label class="block mb-2 font-medium">Số điện thoại</label>
+          <input id="customerPhone" class="w-full border rounded p-2 mb-4" placeholder="Số điện thoại" />
+
+          <label class="block mb-2 font-medium">Email</label>
+          <input id="customerEmail" class="w-full border rounded p-2 mb-4" placeholder="Email" />
+
+          <label class="block mb-2 font-medium">Chọn Combo (nếu có)</label>
+          <select id="comboSelect" class="w-full border rounded p-2 mb-4">
+            <option value="0|0">Không chọn</option>
+            <option value="combo1|1350000">Combo 1 - 1.350.000đ</option>
+            <option value="combo2|1850000">Combo 2 - 1.850.000đ</option>
+            <option value="combo3|2350000">Combo 3 - 2.350.000đ</option>
+          </select>
+
+          <label class="block mb-2 font-medium">Chọn phần mềm</label>
+          <div class="mb-2">
+            <select id="softwareType" class="w-full border rounded p-2 mb-2">
+              <option value="none">Không chọn</option>
+              <option value="basic">Cơ bản</option>
+              <option value="popular">Phổ biến</option>
+              <option value="advanced">Nâng cao</option>
+            </select>
+            <select id="softwareYears" class="w-full border rounded p-2">
+              <option value="1">1 năm</option>
+              <option value="2">2 năm</option>
+              <option value="3">3 năm</option>
+            </select>
+          </div>
+        </div>
+
+        <div>
+          <label class="block mb-2 font-medium">Chọn phần cứng (chọn & nhập số lượng)</label>
+          <div class="space-y-2 mb-4">
+            <!-- Each hardware row: checkbox + qty -->
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="5900000" value="Máy POSAPP D3"> Máy POSAPP D3 (5.900.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="5290000" value="Máy POSAPP PAM3"> Máy POSAPP PAM3 (5.290.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="4690000" value="Máy POS PAC2S"> Máy POS PAC2S (4.690.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="1370000" value="Máy in Bill Xprinter"> Máy in Bill Xprinter (1.370.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="1590000" value="Máy in tem Xprinter PA 365B"> Máy in tem Xprinter PA 365B (1.590.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="2190000" value="Máy in tem PA (USB)"> Máy in tem PA (USB) (2.190.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="2490000" value="Máy in tem PA (LAN + USB)"> Máy in tem PA (LAN + USB) (2.490.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="810000" value="Ngăn kéo đựng tiền (4 ngăn)"> Ngăn kéo 4 ngăn (810.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="1050000" value="Ngăn kéo đựng tiền (10 ngăn)"> Ngăn kéo 10 ngăn (1.050.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="3200000" value="Bộ rung 16 thẻ"> Bộ rung 16 thẻ (3.200.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="970000" value="Máy quét mã vạch đơn tia"> Máy quét mã vạch đơn tia (970.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+            <div>
+              <label><input type="checkbox" class="hw-checkbox" data-price="1480000" value="Máy quét mã vạch đa tia"> Máy quét mã vạch đa tia (1.480.000đ)</label>
+              &nbsp;&nbsp;<input type="number" class="hw-qty w-20 border rounded p-1 ml-2" min="1" value="1" disabled>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 flex items-center justify-between">
+        <div class="text-lg font-bold">Tổng: <span id="totalAmount">0</span> đ</div>
+        <div class="space-x-2">
+          <button id="btnPreview" class="px-4 py-2 bg-gray-200 rounded">Xem tóm tắt</button>
+        </div>
+      </div>
+
+      <!-- Tóm tắt (preview) -->
+      <pre id="previewBox" class="mt-4 p-3 bg-gray-100 rounded text-sm hidden"></pre>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm text-gray-500 py-6">© 2025 Báo giá PosApp - Demo</footer>
+
+<script>
+// Giá phần mềm theo loại và số năm (theo bảng)
+const softwarePrices = {
+  basic: {1: 1800000, 2: 3600000, 3: 5400000},
+  popular: {1: 2640000, 2: 5280000, 3: 7920000},
+  advanced: {1: 3588000, 2: 7176000, 3: 10764000}
+};
+
+function formatVND(n){ return n.toLocaleString('vi-VN'); }
+function formatVND(n){ return n.toLocaleString('vi-VN'); }
+
+function calcTotal(){
+  let total = 0;
+
+  // Combo
+  const comboVal = document.getElementById('comboSelect').value;
+  if(comboVal && comboVal !== '0|0'){
+    const parts = comboVal.split('|');
+    const comboPrice = parseInt(parts[1]) || 0;
+    total += comboPrice;
+  }
+
+  // Software
+  const stype = document.getElementById('softwareType').value;
+  const years = parseInt(document.getElementById('softwareYears').value);
+  let swPrice = 0;
+  if(stype !== 'none'){
+    swPrice = softwarePrices[stype][years] || 0;
+    total += swPrice;
+  }
+
+  // Hardware
+  const hwCheckboxes = document.querySelectorAll('.hw-checkbox');
+  hwCheckboxes.forEach((cb, idx) => {
+    if(cb.checked){
+      const price = parseInt(cb.getAttribute('data-price')) || 0;
+      const qty = parseInt(document.querySelectorAll('.hw-qty')[idx].value) || 0;
+      total += price * qty;
+    }
+  });
+
+  document.getElementById('totalAmount').innerText = formatVND(total);
+  return { total, comboVal, swPrice };
+}
+
+// Enable/disable qty inputs when checkbox toggled
+document.querySelectorAll('.hw-checkbox').forEach((cb, idx) => {
+  cb.addEventListener('change', (e) => {
+    const qtyInput = document.querySelectorAll('.hw-qty')[idx];
+    qtyInput.disabled = !e.target.checked;
+    calcTotal();
+  });
+});
+
+// Update total when selects or qty change
+document.getElementById('comboSelect').addEventListener('change', calcTotal);
+document.getElementById('softwareType').addEventListener('change', calcTotal);
+document.getElementById('softwareYears').addEventListener('change', calcTotal);
+document.querySelectorAll('.hw-qty').forEach(i => i.addEventListener('input', calcTotal));
+
+document.getElementById('btnPreview').addEventListener('click', () => {
+  const preview = buildSummaryText();
+  const pb = document.getElementById('previewBox');
+  pb.innerText = preview;
+  pb.classList.toggle('hidden', false);
+});
+
+document.getElementById('btnExport').addEventListener('click', exportPDF);
+
+function buildSummaryText(){
+  const cust = document.getElementById('customerName').value || '-';
+  const phone = document.getElementById('customerPhone').value || '-';
+  const email = document.getElementById('customerEmail').value || '-';
+  const comboVal = document.getElementById('comboSelect').value;
+  let summary = `Khách hàng: ${cust}\nĐiện thoại: ${phone}\nEmail: ${email}\n\n`;
+
+  if(comboVal && comboVal !== '0|0'){
+    const parts = comboVal.split('|');
+    summary += `Combo: ${parts[0]} - ${formatVND(parseInt(parts[1]))} đ\n`;
+  }
+
+  const stype = document.getElementById('softwareType').value;
+  const years = parseInt(document.getElementById('softwareYears').value);
+  if(stype !== 'none'){
+    const swPrice = softwarePrices[stype][years];
+    summary += `Phần mềm: ${stype} (${years} năm) - ${formatVND(swPrice)} đ\n`;
+  }
+
+  summary += '\nPhần cứng:\n';
+  document.querySelectorAll('.hw-checkbox').forEach((cb, idx) => {
+    if(cb.checked){
+      const price = parseInt(cb.getAttribute('data-price')) || 0;
+      const qty = parseInt(document.querySelectorAll('.hw-qty')[idx].value) || 0;
+      summary += `- ${cb.value} x ${qty} = ${formatVND(price * qty)} đ\n`;
+    }
+  });
+
+  summary += `\nTổng: ${document.getElementById('totalAmount').innerText} đ\n`;
+  return summary;
+}
+
+function exportPDF(){
+  const { jsPDF } = window.jspdf;
+  const doc = new jsPDF({unit: 'pt', format: 'a4'});
+  let y = 40;
+  // Header company info (you can change)
+  doc.setFontSize(14);
+  doc.text('CÔNG TY CỔ PHẦN POS-DEMO', 40, y);
+  doc.setFontSize(10);
+  doc.text('Địa chỉ: (ví dụ) Hà Nội', 40, y + 15);
+  doc.text('Hotline: 1900 63 69 56 | Email: next360@vimo.vn', 40, y + 30);
+  y += 55;
+
+  doc.setFontSize(18);
+  doc.text('BÁO GIÁ', 300, y, {align: 'center'});
+  y += 25;
+
+  // Date & customer info
+  const today = new Date().toLocaleDateString('vi-VN');
+  doc.setFontSize(10);
+  doc.text(`Ngày lập: ${today}`, 40, y);
+  const cust = document.getElementById('customerName').value || '-';
+  const phone = document.getElementById('customerPhone').value || '-';
+  const email = document.getElementById('customerEmail').value || '-';
+  doc.text(`Khách hàng: ${cust}`, 40, y + 15);
+  doc.text(`Điện thoại: ${phone}`, 40, y + 30);
+  doc.text(`Email: ${email}`, 40, y + 45);
+  y += 70;
+
+  // Table header
+  doc.setFontSize(11);
+  doc.text('STT', 40, y);
+  doc.text('Mô tả', 80, y);
+  doc.text('SL', 360, y);
+  doc.text('Đơn giá', 420, y);
+  doc.text('Thành tiền', 500, y);
+  y += 10;
+  doc.line(40, y, 555, y);
+  y += 15;
+
+  let idx = 1;
+  let grandTotal = 0;
+
+  // Combo (if any)
+  const comboVal = document.getElementById('comboSelect').value;
+  if(comboVal && comboVal !== '0|0'){
+    const parts = comboVal.split('|');
+    const comboName = parts[0];
+    const comboPrice = parseInt(parts[1]) || 0;
+    doc.text(String(idx), 40, y);
+    doc.text(comboName, 80, y);
+    doc.text('1', 360, y);
+    doc.text(formatVND(comboPrice), 420, y);
+    doc.text(formatVND(comboPrice), 500, y);
+    grandTotal += comboPrice;
+    idx++; y += 18;
+  }
+
+  // Software (if any)
+  const stype = document.getElementById('softwareType').value;
+  const years = parseInt(document.getElementById('softwareYears').value);
+  if(stype !== 'none'){
+    const swPrice = softwarePrices[stype][years] || 0;
+    const swLabel = `${stype} - ${years} năm`;
+    doc.text(String(idx), 40, y);
+    doc.text(swLabel, 80, y);
+    doc.text('1', 360, y);
+    doc.text(formatVND(swPrice), 420, y);
+    doc.text(formatVND(swPrice), 500, y);
+    grandTotal += swPrice;
+    idx++; y += 18;
+  }
+
+  // Hardware items
+  document.querySelectorAll('.hw-checkbox').forEach((cb, hidx) => {
+    if(cb.checked){
+      const price = parseInt(cb.getAttribute('data-price')) || 0;
+      const qty = parseInt(document.querySelectorAll('.hw-qty')[hidx].value) || 0;
+      const lineTotal = price * qty;
+      // page break
+      if(y > 740){ doc.addPage(); y = 40; }
+      doc.text(String(idx), 40, y);
+      // wrap description if too long
+      const maxWidth = 260;
+      const descLines = doc.splitTextToSize(cb.value, maxWidth);
+      doc.text(descLines, 80, y);
+      doc.text(String(qty), 360, y);
+      doc.text(formatVND(price), 420, y);
+      doc.text(formatVND(lineTotal), 500, y);
+      grandTotal += lineTotal;
+      idx++;
+      y += (descLines.length * 12) + 6;
+    }
+  });
+
+  // Grand total
+  if(y > 740){ doc.addPage(); y = 40; }
+  doc.setFontSize(12);
+  doc.text('Tổng cộng:', 400, y + 10);
+  doc.text(formatVND(grandTotal) + ' đ', 500, y + 10);
+
+  // Footer note
+  y += 40;
+  doc.setFontSize(9);
+  doc.text('Ghi chú: Giá đã bao gồm VAT (nếu có). Báo giá có hiệu lực trong 30 ngày.', 40, y);
+
+  // Lưu file
+  doc.save('BaoGia_PosApp.pdf');
+}
+
+// Initial calc
+calcTotal();
+</script>
+</body>
+</html>
